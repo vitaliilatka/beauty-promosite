@@ -1,0 +1,26 @@
+{
+    "name": "beauty-promosite",
+    "version": "1.0.0",
+    "description": "Simple promo site for a beauty salon",
+    "main": "index.js",
+    "scripts": {
+      "start": "parcel src/index.html",
+      "build": "parcel build src/index.html --public-url ./"
+    },
+    "repository": {
+       "type": "git",
+       "url": "git+https://github.com/vitaliilatka/beauty-promosite.git"
+    },
+    "keywords": [
+      "beauty",
+      "salon",
+      "promo",
+      "site"
+    ],
+    "author": "Vitalii Latka",
+    "license": "MIT",
+    "dependencies": {
+      "parcel-bundler": "^1.12.5"
+    }
+  }
+  
