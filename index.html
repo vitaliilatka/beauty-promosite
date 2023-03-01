@@ -1,41 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Beauty Salon Promo Site</title>
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <h1>Beauty Salon</h1>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main-content">
-        <h2>Welcome to Our Salon</h2>
-        <p>Our experienced beauty professionals offer a variety of services to help you look and feel your best. Whether you're looking for a new hairstyle, a relaxing massage, or a professional makeup application, we've got you covered.</p>
-        <h3>Book an Appointment</h3>
-        <form id="contact-form" method="POST" action="/form-submissions" data-netlify="true">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-          <button type="submit">Submit</button>
-        </form>
-      </main>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ElectroStyle - Красота и уход</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <h1 class="logo-name">
+        <span class="logo-first-word">Electro</span>Style
+      </h1>
+      <p class="logo-slogan">Гладко. Безопасно. Навсегда.</p>
     </div>
-  </body>
-</html>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/"><img src="./images/instagram.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/"><img src="./images/facebook.png" alt="Facebook"></a>
+    </div>
+  </header>
 
-    
+  <main class="main-content">
+    <section class="services-description">
+      <h2>Электроэпиляция</h2>
+      <p>Современный метод удаления нежелательных волосков на любой части тела без боли и стресса для кожи. Наши профессионалы помогут вам обрести гладкую кожу на долгое время.</p>
+    </section>
+
+    <section class="services-description">
+      <h2>Шугаринг</h2>
+      <p>Ультрамягкий метод удаления волосков с использованием специальной сахарной пасты. Шугаринг не только эффективен, но и бережен к коже, не вызывает раздражения и аллергии.</p>
+    </section>
+
+    <section class="services-description">
+      <h2>Восковая эпиляция</h2>
+      <p>Классический метод удаления волосков с использованием качественных восков. Наши мастера гарантируют отличный результат и минимальный дискомфорт в процессе.</p>
+    </section>
+
+    <form class="contact-form" action="https://formspree.io/f/myybzjky" method="POST">
+      <h2>Запишитесь на прием прямо сейчас</h2>
+      <div class="input-group">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" required>
+      </div>      
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div class="input-group">
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" name="phone" id="phone" required>
+      </div>
+      <button type="submit" class="submit-btn">Записаться</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>© 2022 ElectroStyle - Красота и уход
